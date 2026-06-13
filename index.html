@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FocusBuild</title>
+  <style>
+    :root {
+      --bg:       #0F1117;
+      --card:     #1A1D27;
+      --border:   #2A2D3A;
+      --mint:     #4ECBA5;
+      --text:     #F0F0F5;
+      --secondary:#9A9DB0;
+      --tertiary: #5A5D70;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 48px 20px 80px;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, var(--mint), #2DA87C);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .header-text p {
+      font-size: 14px;
+      color: var(--secondary);
+      margin-top: 2px;
+    }
+
+    /* Intro card */
+    .intro-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .intro-card .badge {
+      display: inline-block;
+      background: var(--mint);
+      color: #0F1117;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .intro-card p {
+      color: var(--secondary);
+      font-size: 15px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section p {
+      color: var(--secondary);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    /* Highlight items */
+    .point-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .point-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--secondary);
+      font-size: 15px;
+    }
+
+    .point-list li .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--mint);
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: rgba(78, 203, 165, 0.08);
+      border: 1px solid rgba(78, 203, 165, 0.2);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-top: 14px;
+    }
+
+    .highlight p {
+      color: var(--mint) !important;
+      font-size: 14px !important;
+      font-weight: 500;
+      margin: 0 !important;
+    }
+
+    /* Contact */
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .contact-card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: var(--secondary);
+      font-size: 15px;
+    }
+
+    .contact-card a {
+      color: var(--mint);
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      color: var(--tertiary);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">🌿</div>
+      <div class="header-text">
+        <h1>FocusBuild</h1>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro-card">
+      <div class="badge">Privacy First</div>
+      <p>
+        FocusBuild is built on a simple principle: your data belongs to you.
+        Everything you create in the app — your focus sessions, habits, tasks,
+        and progress — lives entirely on your device. We don't collect it,
+        we don't store it on our servers, and we don't share it with anyone.
+      </p>
+    </div>
+
+    <!-- 1. Information We Collect -->
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>FocusBuild does not collect any personal information. The app has no accounts, no registration, and no login.</p>
+      <p>All data you enter — including focus tasks, habits, daily tasks, session history, and XP progress — is stored locally on your device using Apple's on-device storage framework (SwiftData). This data never leaves your device.</p>
+
+      <div class="highlight">
+        <p>✦ &nbsp;FocusBuild does not transmit any data to external servers. Ever.</p>
+      </div>
+    </div>
+
+    <!-- 2. Notifications -->
+    <div class="section">
+      <h2>2. Notifications</h2>
+      <p>FocusBuild may ask for permission to send you local notifications — for example, habit reminders or session alerts. These notifications are generated entirely on your device.</p>
+      <ul class="point-list">
+        <li><span class="dot"></span>We use Apple's local notification system only. No push notification servers are used.</li>
+        <li><span class="dot"></span>No notification content is transmitted to us or any third party.</li>
+        <li><span class="dot"></span>You can turn notifications off at any time in the app or in your device's Settings.</li>
+      </ul>
+    </div>
+
+    <!-- 3. Data Sharing -->
+    <div class="section">
+      <h2>3. Data Sharing &amp; Third Parties</h2>
+      <p>We do not share, sell, rent, or trade any information with third parties — because we don't collect any to share.</p>
+      <p>FocusBuild does not include any third-party advertising SDKs, analytics tools, or tracking frameworks.</p>
+    </div>
+
+    <!-- 4. Analytics -->
+    <div class="section">
+      <h2>4. Analytics &amp; Tracking</h2>
+      <p>FocusBuild does not use any analytics, crash-reporting services, or behavioural tracking tools. We do not track how you use the app.</p>
+      <p>The only usage data we may receive is aggregate, anonymous information provided by Apple through the App Store (such as total download counts), which is subject to Apple's own privacy policy and contains no personally identifiable information.</p>
+    </div>
+
+    <!-- 5. Purchases -->
+    <div class="section">
+      <h2>5. In-App Purchases</h2>
+      <p>FocusBuild is currently free with no in-app purchases. If purchases are introduced in a future version, all payment processing will be handled entirely by Apple's App Store. We will never see or store your payment details.</p>
+    </div>
+
+    <!-- 6. Children -->
+    <div class="section">
+      <h2>6. Children's Privacy</h2>
+      <p>FocusBuild does not knowingly collect any information from anyone, including children under the age of 13. Since no data is collected or transmitted, the app is safe for all ages in that regard.</p>
+      <p>The app is rated 4+ on the App Store and contains no harmful content.</p>
+    </div>
+
+    <!-- 7. Data Retention & Deletion -->
+    <div class="section">
+      <h2>7. Your Data &amp; Deletion</h2>
+      <p>Since all your data is stored locally on your device, you are always in full control of it.</p>
+      <ul class="point-list">
+        <li><span class="dot"></span>To delete all FocusBuild data, simply delete the app from your device.</li>
+        <li><span class="dot"></span>Your data may be included in iCloud backups if you have iCloud backup enabled on your device — this is controlled by your own Apple account settings, not by us.</li>
+        <li><span class="dot"></span>We have no ability to access, retrieve, or delete data on your behalf.</li>
+      </ul>
+    </div>
+
+    <!-- 8. Security -->
+    <div class="section">
+      <h2>8. Security</h2>
+      <p>Because all data stays on your device, your information benefits from the full security of your device itself — including Face ID, Touch ID, passcode protection, and iOS encryption. We have no servers that could be breached, because we store nothing.</p>
+    </div>
+
+    <!-- 9. Changes -->
+    <div class="section">
+      <h2>9. Changes to This Policy</h2>
+      <p>If we ever change this privacy policy — for example, if a future version of the app introduces new features that affect privacy — we will update this page and revise the "Last updated" date at the bottom.</p>
+      <p>We encourage you to review this policy periodically. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-card">
+      <h2>10. Contact Us</h2>
+      <p>If you have any questions about this privacy policy or how FocusBuild handles your data, you can reach us at:</p>
+      <p style="margin-top: 12px;">
+        📧 <a href="mailto:osatianpeyman@gmail.com">osatianpeyman@gmail.com</a>
+      </p>
+      <p style="margin-top: 8px;">We'll do our best to respond within a few business days.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>FocusBuild &mdash; Privacy Policy</p>
+      <p style="margin-top: 6px;">Last updated: June 2026 &nbsp;·&nbsp; Effective date: June 2026</p>
+    </footer>
+
+  </div>
+</body>
+</html>
